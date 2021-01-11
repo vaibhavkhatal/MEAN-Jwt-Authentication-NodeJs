@@ -9,7 +9,3 @@ jobs:
       command: |
         npm install --save
 
-workflows:
-  build_tests:
-    jobs:
-      -run_tests
