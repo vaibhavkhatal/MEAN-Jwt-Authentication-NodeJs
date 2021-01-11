@@ -21,7 +21,11 @@ orbs:
   node: circleci/node@4.1.0
 version: 2.1
 workflows:
+<<<<<<< HEAD
   matrix-tests:
+=======
+       matrix-tests:
+>>>>>>> 453d424786ab22553a5111453db860f591e60ad7
     jobs:
       - node/test:
           version: 13.11.0
