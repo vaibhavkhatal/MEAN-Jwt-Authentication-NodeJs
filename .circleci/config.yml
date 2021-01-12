@@ -1,11 +1,7 @@
 version: 2.1
-jobs:
-  docker:
-    -image: circleci/node.10
-  steps: 
-    - checkout
-    - run:
-      name: Install npm dependencies
-      command: |
-        npm install --save
-
+orbs:
+  node: circleci/node@3.0.0
+workflows:
+  node-tests:
+    jobs:
+      - node/test
