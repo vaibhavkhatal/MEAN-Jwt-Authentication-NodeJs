@@ -5,3 +5,5 @@ workflows:
   node-tests:
     jobs:
       - node/test
+      display:	display:
+  source_url:https://github.com/vaibhavkhatal/MEAN-Jwt-Authentication-NodeJs/tree/Test
