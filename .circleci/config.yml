@@ -14,3 +14,15 @@ jobs:
       - checkout
       - run: npm install
       # - run: npm test
+      - run: 
+        name: backend unit test
+      command: | 
+      sbt "backend"
+
+   jobs:
+      - compilation-validation-checks:
+          context: 
+            - MEAN
+      - unit-tests:
+          context: 
+            - MEAN
