@@ -16,7 +16,7 @@ jobs:
       # - run: npm test
       - run: 
         name: backend unit test
-      command: | 
+      command: 
       sbt "backend"
 
    jobs:
