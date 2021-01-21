@@ -11,18 +11,18 @@ jobs:
       - image: circleci/node:8.9.0
 
     steps:
-      # - checkout
+      - checkout
       - run: npm install
       # - run: npm test
-      - run: 
-        name: backend unit test
-      command: 
-      sbt "backend"
+      # - run: 
+      #   name: backend unit test
+      # command: | 
+      # sbt "backend"
 
    jobs:
       - compilation-validation-checks:
           context: 
-            - MEAN
+            - gvp-ssai\\\\
       - unit-tests:
           context: 
             - MEAN
