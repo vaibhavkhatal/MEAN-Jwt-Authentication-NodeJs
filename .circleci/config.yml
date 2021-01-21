@@ -7,7 +7,7 @@ general:
 jobs:
   build:
     context: 
-            - mean
+            - meanstack
     docker:
       # specify the version you desire here
       - image: circleci/node:8.9.0
@@ -16,6 +16,7 @@ jobs:
     steps:
       - checkout
       - run: npm install
+
       # - run: npm test
       # - run: 
       #   name: backend unit test
