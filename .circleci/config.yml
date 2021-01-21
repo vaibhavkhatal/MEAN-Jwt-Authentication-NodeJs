@@ -23,7 +23,7 @@ jobs:
       # command: | 
       # sbt "backend"
 
-       environment:
+ environment:
     - CIRCLE_COMPARE_URL: https://github.com/vaibhavkhatal/MEAN-Jwt-Authentication-NodeJs/compare/d853df94e316792586732e02f5a0de22f209372c...ab32f3be5ba255cf8f990c56124e516ee8af365f
 workflows:
   version: 2
