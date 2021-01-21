@@ -6,6 +6,8 @@ general:
      - test
 jobs:
   build:
+    context: 
+            - mean
     docker:
       # specify the version you desire here
       - image: circleci/node:8.9.0
@@ -19,10 +21,4 @@ jobs:
       # command: | 
       # sbt "backend"
 
-   jobs:
-      - compilation-validation-checks:
-          context: 
-            - gvp-ssai\\\\
-      - unit-tests:
-          context: 
-            - MEAN
+   
