@@ -7,9 +7,15 @@ on:
   pull_request:
     branches:
       - master
-  #schedule:
+  schedule:
     # Run E2E workflow everyday at 06:00 AM IST. Below CRON is according to UTC timezone
     # Note: The schedule event can be delayed during periods of high loads of GitHub Actions workflow runs. High load times include the start of every hour. To decrease the chance of delay, schedule your workflow to run at a different time of the hour.
-    - cron:  '30 6 * * *'
-    
-    echo hello World
+    - cron:  '* * * * *'
+  
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
+ 
